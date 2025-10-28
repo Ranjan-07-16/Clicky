@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clicker</title>
+    </head>
+    <body style="display:flex; flex-direction:column">
+        <div style="display:flex; justify-content:flex-end">
+            <div><button class="mybutton" onclick="toggler()" style="padding:10px; border:none; border-radius:50px; font-size:13px">Toggle Dark Mode</button></div>
+        </div>
+        <div style="margin-top:100px">
+            <form>
+                <div class="maindiv" style="display:flex; flex-direction:column">
+                    <div style="display:flex; flex-direction:column">
+                        <div><label for="namebar">Name:</label><br></div>
+                        <div><input id="namebar" type="text" placeholder="Enter name"><br><br></div>
+                    </div>
+                    <div style="display:flex; flex-direction:column">
+                        <div><label for="numbar">Mobile number:</label><br></div>
+                        <div><input id="numbar" placeholder="Enter mobile number"><br><br></div>
+                    <div>
+                    <div style="display:flex; flex-direction:column">
+                        <div><label for="emailbar">Email:</label><br></div>
+                        <div><input id="emailbar" placeholder="Enter email" type="email"><br><br></div>
+                    </div>
+                    <div style="display:flex; flex-direction:column">
+                        <div><label for="address">Delivery location:</label><br></div>
+                        <div><input id="address" type="text" placeholder="Enter delivery location"></div>
+                    </div>
+                    <div style="display:flex; flex-direction:row;">
+                        <div style="margin-top:17px; margin-right:110px; margin-left:12px"><button onclick="clear_func()" class="clear_button">Clear</button></div>
+                        <div style="margin-top:17px;"><button onclick="submit_func()" class="submit_button" role="submit">Submit</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <style>
+            .maindiv{
+                margin-left:600px;
+                background-color: lightblu;
+                width:fit-content;
+                padding:20px;
+                border:1px solid black;
+            }
+            label{
+                font-size:14px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            label:hover{
+                cursor:pointer;
+            }
+            input{
+                padding:10px;
+                padding-left:5px;
+                height:10px;
+                width:250px;
+                font-size:12.5px;
+                border:1px solid black;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            input:active{
+                border:2px solid black;
+            }
+            .submit_button{
+                border:none;
+                font-size:13px;
+                background-color:black;
+                color:white;
+                padding:10px;
+                padding-top:12px;
+                padding-bottom: 12px;
+                padding-left:15px;
+                padding-right:15px;
+                border-radius:100px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .submit_button:hover{
+                cursor:pointer;
+                background-color: rgb(0,0,0,0.7);
+                transition-duration: 0.1s;
+            }
+            .clear_button:hover{
+                cursor:pointer;
+                background-color: rgb(0,0,0,0.7);
+                transition-duration: 0.1s;
+            }
+            .clear_button{
+                border:none;
+                font-size:13px;
+                background-color:black;
+                color:white;
+                padding:10px;
+                padding-top:12px;
+                padding-bottom: 12px;
+                padding-left:15px;
+                padding-right:15px;
+                border-radius:100px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        </style>
+
+
+        <script src="clicker.js"></script>
+    </body>
+</html>
